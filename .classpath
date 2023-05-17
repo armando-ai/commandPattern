@@ -9,6 +9,7 @@
 	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
@@ -22,9 +23,10 @@
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -34,44 +36,21 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Armando/.m2/repository/org/openjfx/javafx-controls/17-ea+12/javafx-controls-17-ea+12-win.jar" sourcepath="C:/Users/Armando/.m2/repository/org/openjfx/javafx-controls/17-ea+12/javafx-controls-17-ea+12-sources.jar">
+	<classpathentry kind="src" path="target/generated-sources/annotations">
 		<attributes>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.openjfx"/>
-			<attribute name="maven.artifactId" value="javafx-controls"/>
-			<attribute name="maven.version" value="17-ea+12"/>
-			<attribute name="maven.classifier" value="win"/>
-			<attribute name="maven.scope" value="compile"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Armando/.m2/repository/org/openjfx/javafx-fxml/17-ea+12/javafx-fxml-17-ea+12-win.jar" sourcepath="C:/Users/Armando/.m2/repository/org/openjfx/javafx-fxml/17-ea+12/javafx-fxml-17-ea+12-sources.jar">
+	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
 		<attributes>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.openjfx"/>
-			<attribute name="maven.artifactId" value="javafx-fxml"/>
-			<attribute name="maven.version" value="17-ea+12"/>
-			<attribute name="maven.classifier" value="win"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Armando/.m2/repository/org/openjfx/javafx-graphics/17-ea+12/javafx-graphics-17-ea+12-win.jar" sourcepath="C:/Users/Armando/.m2/repository/org/openjfx/javafx-graphics/17-ea+12/javafx-graphics-17-ea+12-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.openjfx"/>
-			<attribute name="maven.artifactId" value="javafx-graphics"/>
-			<attribute name="maven.version" value="17-ea+12"/>
-			<attribute name="maven.classifier" value="win"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Armando/.m2/repository/org/openjfx/javafx-base/17-ea+12/javafx-base-17-ea+12-win.jar" sourcepath="C:/Users/Armando/.m2/repository/org/openjfx/javafx-base/17-ea+12/javafx-base-17-ea+12-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.openjfx"/>
-			<attribute name="maven.artifactId" value="javafx-base"/>
-			<attribute name="maven.version" value="17-ea+12"/>
-			<attribute name="maven.classifier" value="win"/>
-			<attribute name="maven.scope" value="compile"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
