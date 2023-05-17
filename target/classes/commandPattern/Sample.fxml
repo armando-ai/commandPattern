@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="rootpane" maxHeight="710.0" maxWidth="554.0" minHeight="650.0" minWidth="554.0" prefHeight="710.0" prefWidth="554.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="commandPattern.MyController">
+   <children>
+      <Pane layoutX="22.0" layoutY="62.0" prefHeight="303.0" prefWidth="513.0" style="-fx-background-color: yellow; -fx-opacity: 0.5; -fx-background-radius: 10px; -fx-border-radius: 10PX; -fx-border-width: 1px; -fx-border-color: black; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); -fx-padding: 10px;">
+         <children>
+            <Pane id="element" fx:id="redBox" layoutX="238.0" layoutY="135.0" prefHeight="33.0" prefWidth="37.0" style="-fx-background-color: black;" />
+         </children>
+      </Pane>
+      <Pane layoutX="23.0" layoutY="456.0" prefHeight="208.0" prefWidth="204.0" style="-fx-background-color: black; -fx-background-radius: 120px; -fx-border-radius: 120PX; -fx-border-width: 7px; -fx-border-color: black; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); -fx-padding: 40px; -fx-scale-z: 1;">
+         <children>
+            <Button fx:id="btnDown" layoutX="76.0" layoutY="130.0" mnemonicParsing="false" onAction="#moveDown" style="-fx-background-color: darkgray;" text="DOWN" textFill="WHITE" />
+            <Button fx:id="btnUp" layoutX="76.0" layoutY="37.0" mnemonicParsing="false" onAction="#moveUp" prefHeight="25.0" prefWidth="54.0" style="-fx-background-color: darkgray;" text="UP" textFill="WHITE" />
+            <Button fx:id="btnLeft" layoutX="20.0" layoutY="83.0" mnemonicParsing="false" onAction="#moveLeft" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: darkgrey;" text="LEFT" textFill="WHITE" />
+            <Button fx:id="btnRight" layoutX="134.0" layoutY="83.0" mnemonicParsing="false" onAction="#moveRight" style="-fx-background-color: darkgray;" text="RIGHT" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Text layoutX="151.0" layoutY="401.0" lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-line-spacing: 2px;" text="CommandPattern" wrappingWidth="295.13671875">
+         <font>
+            <Font name="Calibri Light Italic" size="41.0" />
+         </font>
+      </Text>
+      <Text layoutX="446.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="™" wrappingWidth="49.41015625">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Neumont" wrappingWidth="126.267578125">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="340.0" layoutY="662.0" lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-line-spacing: 2px; -fx-rotate: -45deg;" text="Change Color" wrappingWidth="114.10371398925781">
+         <font>
+            <Font name="Calibri Light Italic" size="21.0" />
+         </font>
+      </Text>
+      <Pane layoutX="255.0" layoutY="509.0" prefHeight="102.0" prefWidth="286.0" style="-fx-background-color: darkgrey; -fx-background-radius: 120px; -fx-border-radius: 120PX; -fx-border-width: 7px; -fx-border-color: darkgrey; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); -fx-padding: 40px; -fx-scale-z: 1; -fx-rotate: -45deg;">
+         <children>
+            <Pane fx:id="btnCc" layoutX="17.0" layoutY="3.0" onMouseClicked="#change" prefHeight="94.0" prefWidth="37.0" style="-fx-background-color: black; -fx-background-radius: 120px; -fx-border-radius: 120PX; -fx-border-width: 7px; -fx-border-color: black; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); -fx-padding: 40px; -fx-scale-z: 1;" />
+            <Pane fx:id="btnUndo" layoutX="176.0" layoutY="3.0" onMouseClicked="#undo" prefHeight="67.0" prefWidth="67.0" style="-fx-background-color: black; -fx-background-radius: 120px; -fx-border-radius: 120PX; -fx-border-width: 7px; -fx-border-color: black; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); -fx-padding: 40px; -fx-scale-z: 1;" />
+         </children>
+      </Pane>
+      <Text layoutX="469.0" layoutY="559.0" lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-line-spacing: 2px; -fx-rotate: -45deg;" text="Undo" wrappingWidth="63.899131774902344">
+         <font>
+            <Font name="Calibri Light Italic" size="21.0" />
+         </font>
+      </Text>
+      <Pane layoutX="-2.0" layoutY="30.0" prefHeight="9.0" prefWidth="556.0" style="-fx-background-color: darkgrey;" />
+      <Pane layoutX="504.0" layoutY="10.0" prefHeight="9.0" prefWidth="34.0" style="-fx-background-color: darkgrey; -fx-rotate: 90deg;" />
+      <Pane layoutX="10.0" layoutY="13.0" prefHeight="9.0" prefWidth="34.0" style="-fx-background-color: darkgrey; -fx-rotate: 90deg;" />
+   </children>
+</Pane>
